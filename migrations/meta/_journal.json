@@ -1,0 +1,27 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1726061043172,
+      "tag": "0000_far_blue_blade",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1726062150010,
+      "tag": "0001_eminent_loa",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1726062390689,
+      "tag": "0002_milky_roulette",
+      "breakpoints": true
+    }
+  ]
+}
