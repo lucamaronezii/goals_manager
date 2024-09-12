@@ -1,15 +1,12 @@
 import { Plus } from '@phosphor-icons/react'
-import { useState } from 'react'
 import empty from '../assets/lets-start.png'
 import logo from '../assets/objective.png'
-import { Button } from './ui/button'
-import { Dialog, DialogContent, DialogTrigger } from './ui/dialog'
+import { Button } from '../components/ui/button'
+import { DialogTrigger } from '../components/ui/dialog'
 
 const Empty = () => {
-    const [open, setOpen] = useState<boolean>(false)
-
     return (
-        <Dialog>
+        <>
             <div className="flex gap-3 items-center">
                 <img className='' src={logo} alt="App logo" width={25} />
                 Personal goals manager
@@ -20,15 +17,11 @@ const Empty = () => {
             </p>
             <DialogTrigger asChild>
                 <Button>
-                    <Plus size={20} weight="bold" />
+                    <Plus size={20} weight="bold" /> 
                     Cadastrar meta
                 </Button>
             </DialogTrigger>
-
-            <DialogContent>
-oi
-            </DialogContent>
-        </Dialog>
+        </>
     )
 }
 
