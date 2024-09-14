@@ -38,10 +38,9 @@ const Summary = () => {
             .then(_ => {
                 queryClient.invalidateQueries({ queryKey: ['summary'] })
                 queryClient.invalidateQueries({ queryKey: ['pending-goals'] })
-            })
+            }).catch(err => console.error(err))
     }
 
-    console.log('pending', pending)
     if (!summary) return
 
     const percentage = Math.round(summary.completed * 100 / summary.total)
